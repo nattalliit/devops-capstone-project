@@ -49,4 +49,10 @@ spec:
           # Delete files and directories starting with .. plus any other character
           rm -rf "${WORKSPACE_SOURCE_PATH}"/..?*
         fi
-
+---
+# install the Python requirements and run the nosetests
+#!/bin/bash
+set -e
+python -m pip install --upgrade pip wheel
+pip install -qr requirements.txt
+nosetests -v --with-spec --spec-color
