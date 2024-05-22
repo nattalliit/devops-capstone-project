@@ -71,8 +71,8 @@ spec:
       runAfter:
         - clone
 
- # new build task
-     - name: build
+  # new build task
+    - name: build
       workspaces:
         - name: source
           workspace: pipeline-workspace
