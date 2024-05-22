@@ -87,7 +87,7 @@ spec:
         - lint
 
   # add deploy task
-      - name: deploy
+    - name: deploy
       workspaces:
         - name: manifest-dir
           workspace: pipeline-workspace
