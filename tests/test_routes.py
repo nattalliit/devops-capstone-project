@@ -19,6 +19,9 @@ DATABASE_URI = os.getenv(
 
 BASE_URL = "/accounts"
 
+# add security
+HTTPS_ENVIRON = {'wsgi.url_scheme': 'https'}
+
 
 ######################################################################
 #  T E S T   C A S E S
