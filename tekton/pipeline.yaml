@@ -53,8 +53,8 @@ spec:
         - clone
       - name: args
         value: ["--count","--max-complexity=10","--max-line-length=127","--statistics"]
-      runAfter:
-        - clone
+   #   runAfter:
+   #     - clone
 
 # add test task
     - name: tests
