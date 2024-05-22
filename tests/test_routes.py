@@ -208,3 +208,13 @@ class TestAccountService(TestCase):
         }
         for key, value in headers.items():
             self.assertEqual(response.headers.get(key), value)
+
+        #import talisman from the service package
+        from service import talisman
+
+        #Update the setUpClass() method by adding the line: talisman.force_https = False
+        @classmethod
+def setUpClass(cls):
+    """Run once before all tests"""
+    { other lines of code here ... }
+    talisman.force_https = False
