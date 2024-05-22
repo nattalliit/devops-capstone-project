@@ -38,7 +38,7 @@ spec:
         - init
 
 # Create the Lint Task
-        - name: lint
+    - name: lint
       workspaces:
         - name: source
           workspace: pipeline-workspace
@@ -47,6 +47,10 @@ spec:
       params:
       - name: image
         value: "python:3.9-slim"
+      - name: args
+        value: ["--count","--max-complexity=10","--max-line-length=127","--statistics"]
+      runAfter:
+        - clone
       - name: args
         value: ["--count","--max-complexity=10","--max-line-length=127","--statistics"]
       runAfter:
