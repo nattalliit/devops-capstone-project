@@ -72,7 +72,7 @@ spec:
         - clone
 
   # new build task
-    - name: build
+    - name: build-image
       workspaces:
         - name: source
           workspace: pipeline-workspace
