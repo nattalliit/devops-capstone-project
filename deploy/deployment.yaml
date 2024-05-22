@@ -21,7 +21,7 @@ spec:
       - image: us.icr.io/sn-labs-nrudnikova/accounts:1
         name: accounts
         resources: {}
-status: {}
+# status: {}
 
         env:
           - name: DATABASE_HOST
